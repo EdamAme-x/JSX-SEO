@@ -25,7 +25,7 @@ export function JSXSEO(props: SEO) {
       <meta property="og:description" content={props.description} />
       <meta property="og:site_name" content={props.title} />
       <meta property="og:url" content={props.url} />
-      <meta property="og:image" content={props.url + icon} />
+      <meta property="og:image" content={props.url + props.icon} />
       <meta property="og:image:width" content="1280" />
       <meta property="og:image:height" content="720" />
       <meta property="og:locale" content={props.local ?? "ja_JP"} />
@@ -33,7 +33,7 @@ export function JSXSEO(props: SEO) {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={props.title} />
       <meta name="twitter:description" content={props.description} />
-      <meta name="twitter:image" content={props.url + icon} />
+      <meta name="twitter:image" content={props.url + props.icon} />
       <meta name="twitter:creator" content={props.creater ?? "@amex2189"} />
       {props.raw ?? <></>}
   </>
