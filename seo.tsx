@@ -8,7 +8,7 @@ interface SEO {
     type: string
   },
   creater?: string,
-  raw: any
+  raw?: any
 }
 
 export function JSXSEO(props: SEO) {
@@ -35,6 +35,6 @@ export function JSXSEO(props: SEO) {
       <meta name="twitter:description" content={props.description} />
       <meta name="twitter:image" content={props.url + icon} />
       <meta name="twitter:creator" content={props.creater ?? "@amex2189"} />
-      {raw}
+      {raw ?? <></>}
   </>
 }
