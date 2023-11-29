@@ -19,7 +19,7 @@ export function JSXSEO(props: SEO) {
       <base href="/">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon shortcut" href={props.icon}>
-      {props./* OGP */}
+      {/* OGP */}
       <meta property="og:type" content="website">
       <meta property="og:title" content={props.title}>
       <meta property="og:description" content={props.description}>
@@ -29,7 +29,7 @@ export function JSXSEO(props: SEO) {
       <meta property="og:image:width" content="1280">
       <meta property="og:image:height" content="720">
       <meta property="og:locale" content="ja_JP">
-      {props./* OGP for Twitter */}
+      {/* OGP for Twitter */}
       <meta name="twitter:card" content="summary">
       <meta name="twitter:title" content={props.title}>
       <meta name="twitter:description" content={props.description}>
